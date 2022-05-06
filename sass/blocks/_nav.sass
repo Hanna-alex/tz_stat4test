@@ -1,0 +1,117 @@
+.nav
+  padding: 35px 0 20px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__menu
+    display: none
+  &__btn-enter
+    @include btn
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 36px
+  &__menu-btn
+    @include btn
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: space-around
+  text-decoration: none
+  width: 140px
+  height: 32px
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 140px
+    height: 100%
+  &__icon
+    width: 35px
+    height: 100%
+  &__name
+    font-family: 'Aretha'
+    font-style: normal
+    font-weight: 700
+    font-size: 18.5124px
+    line-height: 22px
+    letter-spacing: -0.01em
+    color: #54618E
+  &__line
+    display: none
+    width: 1px
+    height: 100%
+    background: rgba(51, 26, 47, 0.5)
+  &__text
+    display: none
+    position: relative
+    width: 135px
+    height: 41.85px
+    font-size: 10px
+    line-height: 14px
+
+.btn-enter
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 4px 20px
+  min-width: 103px
+  min-height: 36px
+  color: $white-color
+  background: $accent-color
+  border-radius: 6px
+
+  &__icon
+    display: inline-block
+    position: relative
+    width: 14px
+    height: 14px
+  &__svg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+  &__text
+    font-weight: 500
+    font-size: 14px
+    line-height: 28px
+
+.menu-btn
+  position: relative
+  width: 42px
+  height: 28px
+  &__line
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-50%)
+    display: inline-block
+    width: 42px
+    height: 4px
+    background: $accent-color
+    border-radius: 4px
+    &::after
+      display: block
+      position: absolute
+      top: -12px
+      left: 0
+      content: ""
+      width: 42px
+      height: 4px
+      background: $accent-color
+      border-radius: 4px
+    &::before
+      display: block
+      position: absolute
+      top: 12px
+      right: 0
+      content: ""
+      width: 32px
+      height: 4px
+      background: $accent-color
+      border-radius: 4px
